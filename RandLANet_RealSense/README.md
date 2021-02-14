@@ -1,11 +1,7 @@
 # RandLaNet_RealSense
 
-### (1) Setup
+### Setup
  
-- Clone the repository 
-```
-git clone
-```
 - Conda Installation
 https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
 Downlaod 64-Bit (x86) Installer (529 MB)
@@ -17,33 +13,40 @@ Ausführen
 ```
 bash Anaconda-latest-Linux-x86_64.sh
 ```
-- Setup python environment
+- Conda Python Umgebung
 ```
 conda create -n randlanet python=3.5
 source activate randlanet
 pip install -r helper_requirements.txt
 sh compile_op.sh
 ```
+### Datenerstellung
+Mit Hilfe des <a href="https://github.com/Hitachi-Automotive-And-Industry-Lab/semantic-segmentation-editor">Semantic Segmentation Editor</a>
+```
+cd semantic-segmentation-editor-x.x.x
+meteor npm install
+meteor npm start
+```
+### RealSense
+<a href="https://drive.google.com/drive/folders/1Nr5vaNY-JVY5tXSAY0KzCT8Tdia7q6I0?usp=sharing">Datensatz</a>
+Entpacken und in `/data/RealSense` legen.
 
-### (2) RealSense
-RealSense dataset can be found 
-<a href="https://drive.google.com/drive/folders/1Nr5vaNY-JVY5tXSAY0KzCT8Tdia7q6I0?usp=sharing">here</a>. 
-Uncompress the folder and move it to 
-`/data/RealSense`.
+<a href="https://drive.google.com/drive/folders/1Nr5vaNY-JVY5tXSAY0KzCT8Tdia7q6I0?usp=sharing">Vortrainierte Modelle</a>
+Entpacken und in `/data/RealSense` legen.
 
-- Preparing the dataset:
+- Vorbereitung des Datensatzes:
 ```
 python utils/data_prepare_RealSense.py
 ```
-- Start training:
+- Start Training:
 ```
 python main_RealSense.py --gpu 0 --mode train
 ```
-- Start testing:
+- Start Test:
 ```
 python main_RealSense.py --gpu 0 --mode test
 ```
-- Move all the generated results (*.ply) in `/test` folder to `/data/RealSense/results`, calculate the final mean IoU results:
+- Alle generierten Punktwolken (*.ply) in `/test` Ordner zu `/data/RealSense/results`, berechnen des finalen mean IoU Ergebnis:
 ```
 python utils/6_fold_cv.py
 ```
