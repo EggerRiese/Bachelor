@@ -28,11 +28,11 @@ meteor npm install
 meteor npm start
 ```
 ### RealSense
-<a href="https://drive.google.com/drive/folders/1Nr5vaNY-JVY5tXSAY0KzCT8Tdia7q6I0?usp=sharing">Datensatz</a>
+<a href="https://drive.google.com/drive/folders/15aaEMAotSZ8yBlIyjnopuvXhv9giM6xo?usp=sharing">Datensatz</a>
 Entpacken und in `/data/RealSense` legen.
 
-<a href="https://drive.google.com/drive/folders/1Nr5vaNY-JVY5tXSAY0KzCT8Tdia7q6I0?usp=sharing">Vortrainierte Modelle</a>
-Entpacken und in `/data/RealSense` legen.
+<a href="https://drive.google.com/drive/folders/15aaEMAotSZ8yBlIyjnopuvXhv9giM6xo?usp=sharing">Vortrainierte Modelle</a>
+Entpacken und in `/results` legen.
 
 - Vorbereitung des Datensatzes:
 ```
@@ -61,13 +61,8 @@ Traceback (most recent call last):
     import cStringIO as sio
 ImportError: No module named 'cStringIO'
 ```
-An entsprechender Stelle dies einfügen:
-```
-try:
-    from StringIO import StringIO
-except ImportError:
-    from io import StringIO
-```
+An entsprechender Stelle die überarbeitete pypcd.py datei einfügen. https://drive.google.com/file/d/1ZdFH9bo2WPIDeEtchPF_yA7Ed6zseluK/view?usp=sharing
+
 ### Acknowledgment
 -  The code refers to <a href="https://github.com/QingyongHu/RandLA-Net">RandLaNet</a>. The Network was customized to fit the Intel RealSense data.
 -  Part of their code refers to <a href="https://github.com/jlblancoc/nanoflann">nanoflann</a> library and the the recent work <a href="https://github.com/HuguesTHOMAS/KPConv">KPConv</a>.
