@@ -2,13 +2,11 @@
 #include <iostream>
 #include "morphsnakes.h"
 #include <fstream>
-
-//#include "/home/joshua/Dokumente/Bachelor/lpng1637/png.h"
 #include <png.h>
-
+#include <pclfuncs.h>
 #include <zlib.h>
 #define cimg_display 0
-#include "/home/joshua/Dokumente/Bachelor/CImg_latest/CImg-2.9.1_pre042420/CImg.h"
+#include "/home/joshua/Dokumente/CImg/CImg.h"
 #include <variables.h>
 
 const string filepath = "MorphSnakes/images/rs_" + path + ".png";

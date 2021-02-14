@@ -6,6 +6,17 @@
 ```
 git clone
 ```
+- Conda Installation
+https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
+Downlaod 64-Bit (x86) Installer (529 MB)
+Cryptographic hash verification
+```
+sha256sum filename
+```
+Ausführen
+```
+bash Anaconda-latest-Linux-x86_64.sh
+```
 - Setup python environment
 ```
 conda create -n randlanet python=3.5
@@ -32,7 +43,7 @@ python main_RealSense.py --gpu 0 --mode train
 ```
 python main_RealSense.py --gpu 0 --mode test
 ```
-- Move all the generated results (*.ply) in `/test` folder to `/data/RealSense/results`, calculate the final mean IoU results (not tested for now):
+- Move all the generated results (*.ply) in `/test` folder to `/data/RealSense/results`, calculate the final mean IoU results:
 ```
 python utils/6_fold_cv.py
 ```

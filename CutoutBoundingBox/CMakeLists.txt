@@ -5,7 +5,8 @@ set(PROJECT_BINARY_OUTPUT_PATH "${PROJECT_BINARY_DIR}")
 
 set(QHULL_INC_DIR "/usr/local/include/libqhullcpp/")
 set(QHULL_LIB_DIR "/usr/local/lib")
-set(QHULL_LIB "${QHULL_LIB_DIR}/libqhullcpp_d.a" "${QHULL_LIB_DIR}/libqhull_rd.so")
+#set(QHULL_LIB "${QHULL_LIB_DIR}/libqhullcpp_d.a" "${QHULL_LIB_DIR}/libqhull_rd.so")
+set(QHULL_LIB "${QHULL_LIB_DIR}/libqhullcpp.a" "${QHULL_LIB_DIR}/libqhull_r.so")
 
 include_directories(${PCL_INCLUDE_DIRS} ${PROJECT_SOURCE_DIR}/HeaderFiles)
 

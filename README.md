@@ -44,8 +44,9 @@ Diese Befehle im build Ornder ausführen.
 ```
 ccmake ..
 ```
+WITH_QHULL -> deaktiveren, da es sonst zu einem Konflikt mit einer anderen Library von QHULL kommt. Mit die Taste 'c' wird die erneute Konfiguration gestartet. Anschließend beendet man ccmake mit 'q'.
 ```
-make -j(Anzahl gweünschter Prozessoren)
+make -j(Anzahl gewünschter Prozessoren)
 ```
 ```
 sudo make install
@@ -90,11 +91,21 @@ sudo apt-get install librealsense2-utils
 Developer Tools
 ```
 sudo apt-get install librealsense2-dev
-```
-```
 sudo apt-get install librealsense2-dbg
 ```
-How to run
+Starten
 ```
 realsense-viewer
 ```
+
+## std-imager
+ermöglicht das Lesen und Schreiben von Bildern
+Download https://github.com/nothings/stb und Pfade anpassen
+
+## pugi-xml
+ermöglicht das Lesen von XML-Dateien
+https://github.com/zeux/pugixml
+
+## CImg
+Für Morphones Snakes
+Downlaod https://github.com/dtschump/CImg.git und Pfade anpassen

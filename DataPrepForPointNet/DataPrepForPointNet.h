@@ -15,7 +15,7 @@
 #include <pcl/PCLPointCloud2.h>
 #include <pcl/conversions.h>
 #define STB_IMAGE_WRITE_IMPLEMENTATION
-#include "/home/joshua/Dokumente/Bachelor/stb-master/stb_image_write.h"
+#include "/home/joshua/Dokumente/stb/stb_image_write.h"
 
 using namespace std;
 using namespace pcl;

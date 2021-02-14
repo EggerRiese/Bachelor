@@ -24,14 +24,14 @@ class ConfigRealSense:
 
     batch_size = 4  # batch_size during training
     val_batch_size = 5  # batch_size during validation and test
-    train_steps = 2  # Number of steps per epochs
+    train_steps = 30  # Number of steps per epochs
     val_steps = 100  # Number of validation steps per epoch 100
 
     sub_sampling_ratio = [4, 4, 4, 4, 2]  # sampling ratio of random sampling at each layer
     d_out = [16, 64, 128, 256, 512]  # feature dimension
 
     noise_init = 3.5  # noise initial parameter
-    max_epoch = 10  # maximum epoch during training
+    max_epoch = 100  # maximum epoch during training
     learning_rate = 1e-2  # initial learning rate
     lr_decays = {i: 0.95 for i in range(0, 500)}  # decay rate of learning rate
 

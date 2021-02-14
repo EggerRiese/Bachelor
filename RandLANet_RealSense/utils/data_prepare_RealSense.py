@@ -13,7 +13,7 @@ sys.path.append(ROOT_DIR)
 from helper_ply import write_ply
 from helper_tool import DataProcessing as DP
 
-dataset_path = '/home/joshua/Dokumente/Bachelor/github/RandLaNet_RealSense/data/RealSense/'
+dataset_path = '/home/joshua/Dokumente/Bachelor/RandLANet_RealSense/data/RealSense/'
 
 sub_grid_size = 0.010
 original_pc_folder = join(dirname(dataset_path), 'original_ply')

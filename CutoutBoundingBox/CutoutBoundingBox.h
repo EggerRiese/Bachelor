@@ -1,8 +1,7 @@
 #pragma once
 
-
 #define STB_IMAGE_WRITE_IMPLEMENTATION
-#include "/home/joshua/Dokumente/Bachelor/stb-master/stb_image_write.h"
+#include "/home/joshua/Dokumente/stb/stb_image_write.h"
 #include "pugixml.hpp"
 #include <iostream>
 #include <string>
@@ -37,10 +36,6 @@ std::vector<rs2::video_frame> cFrameList;
 rs2::spatial_filter spat_filter;
 rs2::disparity_transform depth_to_disparity;
 rs2::disparity_transform disparity_to_depth;
-
-
-
-
 
 int labelToInt(std::string object);
 void savePng(rs2::frameset frames);
