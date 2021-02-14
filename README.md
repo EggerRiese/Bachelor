@@ -1,12 +1,14 @@
 # Bachelor
 
 Tools
-Visual Studio
+## Visual Studio
     CMake Tools - sollte automatisch von Visual Studio installiert werden
-CMake
+## CMake
+```
     sudo apt-get install cmake
     sudo apt-get install cmake.qt-gui ?
     sudo apt-get install cmake-curses-gui
+```
 GCC
     sudo apt-get install gcc ?
     sudo apt-get install g++
