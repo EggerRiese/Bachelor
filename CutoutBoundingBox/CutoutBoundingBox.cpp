@@ -6,9 +6,9 @@ int main(){
     {
         cout << "Aufnahme " + std::to_string(nummer) + "_" + std::to_string(i) << endl;
         cout << "#################################" << endl;
-        string filepath = "/home/joshua/Dokumente/Bachelor/Aufnahmen/Studie/raw_pointcloud_data/bag/new/" + std::to_string(nummer) + "_"+ std::to_string(i) + ".bag";
-        string xmlPath = "/home/joshua/Dokumente/Bachelor/Aufnahmen/Studie/raw_pointcloud_data/png/" + std::to_string(nummer) + "_" + std::to_string(i) + ".xml";
-        std::string pcdpath = "/home/joshua/Dokumente/Bachelor/Aufnahmen/Studie/raw_pointcloud_data/cbrg_output/" + std::to_string(nummer) + "_" + std::to_string(i);
+        string filepath = "/home/joshua/Dokumente/data/raw_pointcloud_data/bag/new/" + std::to_string(nummer) + "_"+ std::to_string(i) + ".bag";
+        string xmlPath = "/home/joshua/Dokumente/data/raw_pointcloud_data/png/" + std::to_string(nummer) + "_" + std::to_string(i) + ".xml";
+        std::string pcdpath = "/home/joshua/Dokumente/data/raw_pointcloud_data/cbrg_output/" + std::to_string(nummer) + "_" + std::to_string(i);
         
         pcl::PointCloud<pclPoint>::Ptr cloud(new pcl::PointCloud<pclPoint>);
         pcl::PointCloud<pcl::PointXYZRGBL>::Ptr labledCloud(new pcl::PointCloud<pcl::PointXYZRGBL>);

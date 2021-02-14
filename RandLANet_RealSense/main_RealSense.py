@@ -13,7 +13,7 @@ import time, pickle, argparse, glob, os
 class RealSense:
     def __init__(self, test_area_idx):
         self.name = 'RealSense'
-        self.path = '/home/joshua/Dokumente/Bachelor/github/RandLaNet_RealSense/data/RealSense/'
+        self.path = '/home/joshua/Dokumente/Bachelor/RandLANet_RealSense/data/RealSense/'
         self.label_to_names = {0: 'void',
                                1: 'apple',
                                2: 'banana',
@@ -33,7 +33,7 @@ class RealSense:
         self.ignored_labels = np.array([])
 
         #self.val_split = '_{:s}'.format(str(test_area_idx))
-        self.val_split = '_'
+        self.val_split = '1_'
         self.all_files = glob.glob(join(self.path, 'original_ply', '*.ply'))
 
         # Initiate containers

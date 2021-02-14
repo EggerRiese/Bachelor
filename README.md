@@ -44,7 +44,7 @@ Diese Befehle im build Ornder ausführen.
 ```
 ccmake ..
 ```
-WITH_QHULL -> deaktiveren, da es sonst zu einem Konflikt mit einer anderen Library von QHULL kommt. Mit die Taste 'c' wird die erneute Konfiguration gestartet. Anschließend beendet man ccmake mit 'q'.
+WITH_QHULL -> deaktiveren, da es sonst zu einem Konflikt mit einer anderen Library von QHULL kommt. Mit der Taste 'c' wird die erneute Konfiguration gestartet. Anschließend beendet man ccmake mit 'q'.
 ```
 make -j(Anzahl gewünschter Prozessoren)
 ```
@@ -108,4 +108,4 @@ https://github.com/zeux/pugixml
 
 ## CImg
 Für Morphones Snakes
-Downlaod https://github.com/dtschump/CImg.git und Pfade anpassen
+Download https://github.com/dtschump/CImg.git und Pfade anpassen

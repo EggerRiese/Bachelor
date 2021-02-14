@@ -51,8 +51,23 @@ python main_RealSense.py --gpu 0 --mode test
 python utils/6_fold_cv.py
 ```
 
-
-
+### Error Handling
+Bei:
+```
+Traceback (most recent call last):
+  File "utils/data_prepare_RealSense.py", line 3, in <module>
+    from pypcd import pypcd 
+  File "/home/joshua/anaconda3/envs/randlanet/lib/python3.5/site-packages/pypcd/pypcd.py", line 15, in <module>
+    import cStringIO as sio
+ImportError: No module named 'cStringIO'
+```
+An entsprechender Stelle dies einfügen:
+```
+try:
+    from StringIO import StringIO
+except ImportError:
+    from io import StringIO
+```
 ### Acknowledgment
 -  The code refers to <a href="https://github.com/QingyongHu/RandLA-Net">RandLaNet</a>. The Network was customized to fit the Intel RealSense data.
 -  Part of their code refers to <a href="https://github.com/jlblancoc/nanoflann">nanoflann</a> library and the the recent work <a href="https://github.com/HuguesTHOMAS/KPConv">KPConv</a>.

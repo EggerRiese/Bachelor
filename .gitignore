@@ -1,1 +1,6 @@
 build
+RandLANet_RealSense/__pycache__
+RandLANet_RealSense/data
+RandLANet_RealSense/train_log
+RandLANet_RealSense/results
+RandLANet_RealSense/log_train_*.txt
