@@ -1,9 +1,6 @@
-# Bachelor
-
-Tools
-<<<<<<< HEAD
+# Installation
 ## Visual Studio
-    CMake Tools - sollte automatisch von Visual Studio installiert werden
+    CMake Tools, sollte automatisch von Visual Studio installiert werden
 ## CMake
     ```bash
     sudo apt-get install cmake
