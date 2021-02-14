@@ -14,6 +14,7 @@ sudo apt-get install g++
 ```
 ## PCL
 ### Abhänigkeiten
+https://packages.ubuntu.com/xenial/libpcl-dev
 ```bash
 sudo apt-get install libboost-all-dev
 sudo apt-get install libeigen3-dev
@@ -26,7 +27,7 @@ sudo apt-get install libvtk6-qt-dev
 ### PCL selbst
 - Download link https://github.com/PointCloudLibrary/pcl/releases (Verwendet wurde 1.10.1)
 ```
-cd pcl-pcl-1..1 # version anpassen
+cd pcl-pcl-1.10.1 # version anpassen
 ```
 ```
 mkdir build && cd build
@@ -34,11 +35,12 @@ mkdir build && cd build
 ```
 cmake ..
 ```
-Optinal: bei error (The CXX compiler identification is unknown)
+Optinal: bei error: The CXX compiler identification is unknown.
+Befehl im pcl Verzeichnis und nicht im build Ordner ausführen.
 ```bash
 cmake -DCMAKE_CXX_COMPILER=/usr/bin/c++ 
 ```
-an aktueller stelle ausführen
+Diese Befehle im build Ornder ausführen.
 ```
 ccmake ..
 ```
@@ -57,8 +59,9 @@ cd qhull/build
 cmake ..
 ```
 ```
-ccmake .. -> CMAKE_BUILD_TYPE = Debug;Release
+ccmake ..
 ```
+Einstellung setzen -> CMAKE_BUILD_TYPE = Debug;Release
 ```
 cmake ..
 ```
@@ -69,6 +72,7 @@ make -j10 # 10 jobs, kann angepasst werden
 sudo make install   
 ```
 ## Librealsense
+Anleitung https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md
 ```
 sudo apt-key adv --keyserver keys.gnupg.net --recv-key F6E65AC044F831AC80A06380C8B3A55A6F3EFCDE || sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key F6E65AC044F831AC80A06380C8B3A55A6F3EFCDE
 ```
