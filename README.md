@@ -5,46 +5,29 @@ Tools
 ## Visual Studio
     CMake Tools - sollte automatisch von Visual Studio installiert werden
 ## CMake
-    ```
+    ```bash
     sudo apt-get install cmake
-    ```
-    ```
-    sudo apt-get install cmake.qt-gui ?
-    ```
-    ```
+    sudo apt-get install cmake.qt-gui
     sudo apt-get install cmake-curses-gui
     ```
 ## GCC
-    ```
-    sudo apt-get install gcc ?
-    ```
-    ```
+    ```bash
+    sudo apt-get install gcc
     sudo apt-get install g++
     ```
 ## PCL
     ### Abhänigkeiten
-        ```
-        sudo apt-get install libboost-all-dev
-        ```
-        ```
-        sudo apt-get install libeigen3-dev
-        ```
-        ```
-        sudo apt-get install libflann-dev
-        ```
         ```bash
+        sudo apt-get install libboost-all-dev
+        sudo apt-get install libeigen3-dev
+        sudo apt-get install libflann-dev
         sudo apt-get install libopenni-dev 
-        ```
-        ```
         sudo apt-get install libqhull-dev
-        ```
-        ```
         sudo apt-get install libvtk6-dev
-        ```
         sudo apt-get install libvtk6-qt-dev
         ```
     ### PCL selbst
-        Download link https://github.com/PointCloudLibrary/pcl/releases (Verwendet wurde 1.10.1)
+        - Download link https://github.com/PointCloudLibrary/pcl/releases (Verwendet wurde 1.10.1)
         ```
         cd pcl-pcl-1..1 # version anpassen
         ```
